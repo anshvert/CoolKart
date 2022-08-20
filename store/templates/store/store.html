@@ -1,0 +1,46 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+
+	<div class = "container-fluid">
+
+		{% for product in products %}
+
+			<div class="row">
+				<div class="col-sm-4">
+
+					<div class="card card-body">
+
+						<img src="{{product.imageURL}}">
+						<div>
+							<h6><strong>{{product.name}}</strong></h6>
+							<hr>
+
+							<button data-product="{{product.id}}" data-action="add" class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+
+							<button class="btn btn-outline-success" type="button" id="view" onclick="display_info({{product.id}})">View </button>
+							<h4 style="display: inline-block; float: right"><strong>${{product.price}}</strong></h4>
+
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-8">
+
+					<div class="card card-body" id="{{product.id}}">
+
+							<p>
+								{{product.info}}
+							<p>
+					</div>
+
+				</div>
+			</div>
+
+
+		{% endfor %}
+
+	</div>
+
+{% endblock content %}
