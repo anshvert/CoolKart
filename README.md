@@ -1,4 +1,6 @@
 # CoolKart
+![image](https://user-images.githubusercontent.com/53685410/189220211-04dd1f47-eced-4534-9199-8f25638b4824.png)
+
 
 <p align="center">
 <img src="![image](https://user-images.githubusercontent.com/53685410/185738080-d7cb1ca7-f555-4ae1-9045-da48b81fe792.png)
